@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+
+  --ff: Outfit, sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-gray);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 20px;
+  width: 320px;
+  height: 497px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.card img {
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.card h1 {
+  font-size: 22px;
+  font-family: var(--ff);
+  font-weight: var(--fw-bold);
+  line-height: 27.72px;
+  text-align: center;
+  color: var(--dark-blue);
+  margin-bottom: 16px;
+}
+
+.card p {
+  font-family: var(--ff);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs);
+  line-height: 18.9px;
+  letter-spacing: 0.19px;
+  text-align: center;
+  color: var(--grayish-blue);
+  padding: 0 16px;
+}
